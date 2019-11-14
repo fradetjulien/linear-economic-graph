@@ -47,7 +47,7 @@ def quantity_finder():
 @click.command()
 def create_graph():
     '''
-    Simple program which outputs a line graph that plots the choosen product versus the utility.
+    Simple program which outputs a line graph that plots the product's utility in function of the quantity.
     '''
     product_name = input('Please enter a product :\n')
     maximum_quantity = quantity_finder()
