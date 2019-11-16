@@ -30,7 +30,7 @@ pipenv run python3 index.py
 ## Example
 
 <p align="center">
-    <img src="assets/cli-example.png" width="450">
+    <img src="assets/cli-example.png" width="250">
     <img src="assets/graph-example.png" width="750">
 </p>
 
