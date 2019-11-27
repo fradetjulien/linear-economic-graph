@@ -1,3 +1,6 @@
+'''
+Marginal utility of a product for each quantity
+'''
 import click
 from matplotlib import pyplot as plt
 
@@ -47,7 +50,7 @@ def quantity_finder():
 @click.command()
 def create_graph():
     '''
-    Simple program which outputs a line graph that plots the product's utility in function of the quantity.
+    Program which outputs a graph that plots the product's utility in function of the quantity.
     '''
     product_name = input('Please enter a product :\n')
     maximum_quantity = quantity_finder()
@@ -56,7 +59,8 @@ def create_graph():
     plt.plot(quantity, utility)
     plt.ylabel("Utility")
     plt.xlabel("Quantity")
-    plt.suptitle("{}'s utility in function of the quantity".format(product_name))
+    plt.grid(True)
+    plt.title("{}'s utility in function of the quantity".format(product_name))
     plt.show()
 
 if __name__ == '__main__':
